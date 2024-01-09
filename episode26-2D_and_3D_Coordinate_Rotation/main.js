@@ -93,7 +93,7 @@ window.onload = function() {
 	document.body.addEventListener("keydown", function(event) {
 		switch(event.keyCode) {
 			case 37: // left
-				if(event.ctrlKey) {
+				if(event.altKey) {
 					rotateY(0.05);
 				}
 				else {
@@ -101,7 +101,7 @@ window.onload = function() {
 				}
 				break;
 			case 39: // right
-				if(event.ctrlKey) {
+				if(event.altKey) {
 					rotateY(-0.05);
 				}
 				else {
@@ -112,7 +112,7 @@ window.onload = function() {
 				if(event.shiftKey) {
 					translateModel(0, 0, 20);
 				}
-				else if(event.ctrlKey) {
+				else if(event.altKey) {
 					rotateX(0.05);
 				}
 				else {
@@ -123,7 +123,7 @@ window.onload = function() {
 				if(event.shiftKey) {
 					translateModel(0, 0, -20);
 				}
-				else if(event.ctrlKey) {
+				else if(event.altKey) {
 					rotateX(-0.05);
 				}
 				else {
